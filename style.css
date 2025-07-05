@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #fff;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+  color: #f35a8c;
+  margin: 20px 0;
+  position: relative;
+}
+
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.heading::before {
+  left: 0;
+}
+
+.heading::after {
+  right: 0;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.card input[type='radio'] {
+  margin-right: 10px;
+  margin-top: 6px;
+  accent-color: #f35a8c;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.unit-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.discount {
+  background: #ffe8ed;
+  color: #f35a8c;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.price-block {
+  text-align: right;
+  margin-top: 6px;
+  margin-right: 10px;
+}
+
+.current-price {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 13px;
+}
+
+.desc {
+  font-size: 12px;
+  color: #777;
+}
+
+.most-popular {
+  position: absolute;
+  top: -10px;
+  right: 4px;
+  background: #f35a8c;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+
+.selector-wrapper {
+  display: none;
+  margin-top: 10px;
+}
+
+.selector-wrapper.active {
+  display: block;
+}
+
+.selector label {
+  font-size: 12px;
+  margin-right: 4px;
+}
+
+.selector select {
+  margin: 4px 6px 4px 0;
+  padding: 4px;
+  font-size: 13px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.free {
+  color: #f35a8c;
+  font-weight: 500;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.cart-btn {
+  margin-top: 16px;
+  width: 100%;
+  background: #f35a8c;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.powered {
+  text-align: right;
+  font-size: 11px;
+  color: #4caf50;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.card.selected {
+  background-color: #fff6fa;
+  border-color: #f35a8c;
+}
